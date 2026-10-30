@@ -26,21 +26,25 @@ graduate:
 masters_supervision:
   - years: "2025–"
     student: "Paloma dos Santos Alves Nunes"
+    title: "Otimizando o escalonamento de cirurgias eletivas no Hospital Universitário Lauro Wanderley"
     program: "M.Sc. in Production Engineering at UFPB"
     role: "Advisor"
 
   - years: "2025–"
     student: "Matheus de Oliveira Silva"
+    title: "Sistema Conversacional Baseado em RAG para apoio informacional sobre Vacinação Infantil: Desenvolvimento e Avaliação de Modelos de Linguagem"
     program: "M.Sc. in Production Engineering at UFPB"
     role: "Advisor"
 
   - years: "2025–"
     student: "Rodrigo Eduardo de Oliveira Bauher Chichorro"
+    title: "Algoritmo heurístico eficiente para o Problema de Rebalanceamento de Sistemas de Compartilhamento de Bicicletas Robusto"
     program: "M.Sc. in Informatics at UFPB"
     role: "Co-advisor"
 
   - years: "2024–2026"
     student: "Marcus Vinícius Mesquita Beltrão Filho"
+    title: "Aplicação de visão computacional e inteligência artificial como ferramentas para manutenção preditiva de cobertas: o caso da UFPB"
     program: "M.Sc. in Production Engineering at UFPB"
     role: "Co-advisor"
 

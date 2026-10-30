@@ -160,6 +160,8 @@ exclude:
   - package.json*
   - Rakefile
   - README
+  - README.md
+  - GUIA_DO_SITE.md
   - tmp
   - vendor
 keep_files:

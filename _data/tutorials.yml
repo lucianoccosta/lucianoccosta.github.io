@@ -2,6 +2,10 @@
 # Para adicionar um, copie um bloco (do "- title" até antes do próximo "- title") e edite.
 # A ordem na página é a mesma ordem deste arquivo.
 
+- title: "Basic Notions of Python-MIP"
+  url: "https://youtube.com/playlist?list=PLRCHPHbSf46U-nVyHaV2tLsj5Sj-0lV5F&si=Nmme7gipm1xGgOxB"
+  language: "Portuguese"
+
 - title: "Basic Notions of Python"
   url: "https://www.youtube.com/playlist?list=PLRCHPHbSf46WExzA839tvngAR9oJFkG-H"
   language: "Portuguese"

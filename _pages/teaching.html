@@ -11,14 +11,14 @@ author_profile: true
 <h2>Undergraduate courses</h2>
 <ul>
 {% for c in t.undergraduate %}
-  <li><strong>{{ c.years }}</strong> &mdash; {{ c.course }}</li>
+  <li><strong>{{ c.years }}:</strong> {{ c.course }}</li>
 {% endfor %}
 </ul>
 
 <h2>Graduate courses</h2>
 <ul>
 {% for c in t.graduate %}
-  <li><strong>{{ c.years }}</strong> &mdash; {{ c.course }}</li>
+  <li><strong>{{ c.years }}:</strong> {{ c.course }}</li>
 {% endfor %}
 </ul>
 

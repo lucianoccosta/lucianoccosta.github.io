@@ -1,7 +1,8 @@
 # Site pessoal – Luciano Costa
 
 Site publicado em **https://lucianoccosta.github.io** (GitHub Pages + Jekyll, tema Academic Pages).
-nPasso a passo completo: [GUIA_DO_SITE.md](GUIA_DO_SITE.md).
+
+Passo a passo completo: [GUIA_DO_SITE.md](GUIA_DO_SITE.md).
 
 Toda vez que você envia (push) uma alteração para o GitHub, o site é reconstruído sozinho
 em 1–2 minutos. Você pode acompanhar na aba **Actions** do repositório.

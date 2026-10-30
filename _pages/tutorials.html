@@ -1,0 +1,21 @@
+---
+layout: archive
+title: "Online Tutorials"
+permalink: /tutorials/
+author_profile: true
+---
+
+{% comment %} O conteúdo desta página vem de _data/tutorials.yml {% endcomment %}
+
+<p>Video tutorials available on my <a href="https://www.youtube.com/@{{ site.author.youtube }}">YouTube channel</a>.</p>
+
+<ul>
+{% for tut in site.data.tutorials %}
+  <li style="margin-bottom: 0.6em;">
+    <i class="fab fa-fw fa-youtube" aria-hidden="true" style="color: #c4302b;"></i>
+    <a href="{{ tut.url }}"><strong>{{ tut.title }}</strong></a>
+    {% if tut.language %}<em>(In {{ tut.language }})</em>{% endif %}
+    {% if tut.description %}<br><small>{{ tut.description }}</small>{% endif %}
+  </li>
+{% endfor %}
+</ul>

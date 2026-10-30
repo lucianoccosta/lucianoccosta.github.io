@@ -1,0 +1,23 @@
+# Tutoriais online (aba "Tutorials").
+# Para adicionar um, copie um bloco (do "- title" até antes do próximo "- title") e edite.
+# A ordem na página é a mesma ordem deste arquivo.
+
+- title: "Basic Notions of Python"
+  url: "https://www.youtube.com/playlist?list=PLRCHPHbSf46WExzA839tvngAR9oJFkG-H"
+  language: "Portuguese"
+
+- title: "Basic Notions of Pyomo"
+  url: "https://www.youtube.com/playlist?list=PLRCHPHbSf46USiL8DDtrLSn1p4E6SslRA"
+  language: "Portuguese"
+
+- title: "Basic Notions of FlexSim"
+  url: "https://www.youtube.com/playlist?list=PLRCHPHbSf46XGof-ll1GYzNuJrBoJg_mc"
+  language: "Portuguese"
+
+- title: "Basic Notions of VBA"
+  url: "https://www.youtube.com/playlist?list=PLRCHPHbSf46V1XF9StfUwNsjLkHO4zxRX"
+  language: "Portuguese"
+
+- title: "Basic Notions of UFFLP"
+  url: "https://www.youtube.com/playlist?list=PLRCHPHbSf46UnAVLJ-QG6_Cuo8F4SgBLZ"
+  language: "Portuguese"

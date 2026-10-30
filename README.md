@@ -1,119 +1,52 @@
-# Academic Pages
-**Academic Pages is a Github Pages template for academic websites.**
+# Site pessoal – Luciano Costa
 
-![Academic Pages template example](images/homepage.png "Academic Pages template example")
+Site publicado em **https://lucianoccosta.github.io** (GitHub Pages + Jekyll, tema Academic Pages).
 
-# Getting Started
+Toda vez que você envia (push) uma alteração para o GitHub, o site é reconstruído sozinho
+em 1–2 minutos. Você pode acompanhar na aba **Actions** do repositório.
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Click the "Use this template" button in the top right.
-1. On the "New repository" page, enter your repository name as "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and add your content.
-1. Upload any files (like PDFs, .zip files, etc.) to the `files/` directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
+## O que editar para cada coisa
 
-See more info at https://academicpages.github.io/
+| Quero mudar...                         | Arquivo                                   |
+|----------------------------------------|-------------------------------------------|
+| Texto da página inicial                | `_pages/about.md`                         |
+| Nome, cargo, foto, e-mail, links (barra lateral) | `_config.yml` (seção `author`)  |
+| Foto                                   | substitua `images/profile.jpg`            |
+| **Publicações**                        | substitua `files/publications.bib`        |
+| **CV (PDF)**                           | substitua `files/CV_Luciano_Costa.pdf`    |
+| Palestras (aba Talks)                  | `_data/talks.yml`                         |
+| Disciplinas e orientações (aba Teaching) | `_data/teaching.yml`                    |
+| Abas do menu superior                  | `_data/navigation.yml`                    |
 
-## Running locally
+**Mantenha os mesmos nomes de arquivo** (`publications.bib`, `CV_Luciano_Costa.pdf`, `profile.jpg`),
+senão o site não os encontra.
 
-When you are initially working your website, it is very useful to be able to preview the changes locally before pushing them to GitHub. To work locally you will need to:
+### Publicações
+A aba *Publications* lê o `files/publications.bib` e monta a lista automaticamente:
+separa por tipo (`@article` → Journal Articles, `@inproceedings` → Conference Papers, ...),
+ordena por ano (mais recente primeiro), coloca o título com link para o DOI e seu nome em negrito.
+Campos usados: `author`, `title`, `journal`/`booktitle`, `volume`, `number`, `pages`, `year`, `doi` ou `url`, `note`.
 
-1. Clone the repository and made updates as detailed above.
-1. Make sure you have ruby-dev, bundler, and nodejs installed
-    
-    On most Linux distribution and [Windows Subsystem Linux](https://learn.microsoft.com/en-us/windows/wsl/about) the command is:
-    ```bash
-    sudo apt install ruby-dev ruby-bundler nodejs
-    ```
-    On MacOS the commands are:
-    ```bash
-    brew install ruby
-    brew install node
-    gem install bundler
-    ```
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
-1. Run `jekyll serve -l -H localhost` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
+### Talks e Teaching
+São arquivos de texto simples (YAML). Para adicionar algo, copie um bloco existente e edite.
+Cuidados: mantenha a indentação (espaços, não TAB) e coloque textos com `:` entre aspas.
 
-If you are running on Linux it may be necessary to install some additional dependencies prior to being able to run locally: `sudo apt install build-essential gcc make`
+## Como atualizar o site
 
-## Using Docker
+**Pelo navegador (mais fácil):** abra o repositório no GitHub, navegue até o arquivo,
+clique no lápis (editar) ou em *Add file → Upload files* para substituir um PDF/.bib,
+e clique em *Commit changes*.
 
-Working from a different OS, or just want to avoid installing dependencies? You can use the provided `Dockerfile` to build a container that will run the site for you if you have [Docker](https://www.docker.com/) installed.
-
-Start by build the container:
-
+**Pelo terminal (WSL):**
 ```bash
-docker build -t jekyll-site .
+cd ~/workspace/lucianoccosta.github.io
+git add -A
+git commit -m "Atualiza CV e publicações"
+git push
 ```
 
-Next, run the container:
-```bash
-docker run -p 4000:4000 --rm -v $(pwd):/usr/src/app jekyll-site
-```
+## O que não precisa mexer
+`_includes/`, `_layouts/`, `_sass/`, `assets/` são o tema (aparência do site).
+`assets/js/bib-publications.js` é o script que lê o `.bib`.
 
-To run the `docker run` command on Windows, you need to adjust the syntax for the volume mapping (`-v`) as Windows uses different path formats. Here's how to run your command on Windows:
-
-### Steps for Windows:
-1. **Check Docker Installation**: Ensure Docker is installed and running.
-2. **Adjust Path for Volume Mapping**:
-
-   - On Windows, replace `$(pwd)` with the full absolute path to your current directory. For example:
-
-     ```bash
-     -v C:\path\to\your\site:/usr/src/app
-     ```
-
-### Full Command Example:
-```bash
-docker run -p 4000:4000 --rm -v C:\path\to\your\site:/usr/src/app jekyll-site
-```
-
-### Things to Keep in Mind:
-1. **Use PowerShell**:
-   - If you are using PowerShell, you can use `${PWD}` for the current directory:
-     ```bash
-     docker run -p 4000:4000 --rm -v ${PWD}:/usr/src/app jekyll-site
-     ```
-
-2. **Enable Docker File Sharing**:
-   - If your volume doesn't map correctly, ensure Docker has access to the drive where your project resides. To do this:
-     - Open Docker Desktop.
-     - Go to *Settings* → *Resources* → *File Sharing*.
-     - Add your drive (e.g., `C:`).
-
-3. **Run in Command Prompt or PowerShell**:
-   - In *Command Prompt*:
-   
-     ```bash
-     docker run -p 4000:4000 --rm -v C:\path\to\your\site:/usr/src/app jekyll-site
-     ```
-   - In *PowerShell*:
-
-     ```bash
-     docker run -p 4000:4000 --rm -v ${PWD}:/usr/src/app jekyll-site
-     ```
-
-# Maintenance
-
-Bug reports and feature requests to the template should be [submitted via GitHub](https://github.com/academicpages/academicpages.github.io/issues/new/choose). For questions concerning how to style the template, please feel free to start a [new discussion on GitHub](https://github.com/academicpages/academicpages.github.io/discussions).
-
-This repository was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License (see LICENSE.md). It is currently being maintained by [Robert Zupko](https://github.com/rjzupkoii) and additional maintainers would be welcomed.
-
-## Bugfixes and enhancements
-
-If you have bugfixes and enhancements that you would like to submit as a pull request, you will need to [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) this repository as opposed to using it as a template. This will also allow you to [synchronize your copy](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) of template to your fork as well.
-
-Unfortunately, one logistical issue with a template theme like Academic Pages that makes it a little tricky to get bug fixes and updates to the core theme. If you use this template and customize it, you will probably get merge conflicts if you attempt to synchronize. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch.
-
----
-<div align="center">
-    
-![pages-build-deployment](https://github.com/academicpages/academicpages.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)
-[![GitHub contributors](https://img.shields.io/github/contributors/academicpages/academicpages.github.io.svg)](https://github.com/academicpages/academicpages.github.io/graphs/contributors)
-[![GitHub release](https://img.shields.io/github/v/release/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/releases/latest)
-[![GitHub license](https://img.shields.io/github/license/academicpages/academicpages.github.io?color=blue)](https://github.com/academicpages/academicpages.github.io/blob/master/LICENSE)
-
-[![GitHub stars](https://img.shields.io/github/stars/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io)
-[![GitHub forks](https://img.shields.io/github/forks/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/fork)
-</div>
+A pasta `CV_atual/` fica só no seu computador (está no `.gitignore`) e não vai para o site.

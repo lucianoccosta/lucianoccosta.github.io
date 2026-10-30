@@ -1,0 +1,114 @@
+# Palestras convidadas (aba "Talks").
+# Para adicionar uma nova, copie um bloco (do "- year" até antes do próximo "- year")
+# e cole no topo da lista "invited". Campos vazios podem ser apagados.
+# A ordem na página é a mesma ordem deste arquivo.
+
+invited:
+  - year: 2026
+    title: "Combining relax-and-fix and fix-and-optimize approaches to solve the Multi-Item Capacitated Lot-Sizing Problem with Unrelated Parallel Machines"
+    url: "https://www.youtube.com/live/eYLfyzMr96M"
+    event: 'Seminar at "LabOtim de Portas Abertas"'
+    location: "Online"
+    host: "Federal University of Rio de Janeiro"
+    language: "Portuguese"
+
+  - year: 2026
+    title: "Modern column generation for estimating single- and multi-purchase ranked list choice models"
+    url: "https://www.linkedin.com/feed/update/urn:li:activity:7498740855776903168/"
+    event: "Seminar at Department of Production Engineering"
+    location: "Fortaleza, Brazil"
+    host: "Federal University of Ceará"
+    language: "Portuguese"
+
+  - year: 2026
+    title: "Modern column generation for estimating single- and multi-purchase ranked list choice models"
+    url: "https://www.linkedin.com/feed/update/urn:li:activity:7487514721345077250/"
+    event: "FBA Science Seminar Series"
+    location: "Online"
+    host: "Amazon"
+    language: "English"
+
+  - year: 2025
+    title: "Column generation applied to the estimation of non-parametric discrete-choice models"
+    url: "https://www.instagram.com/p/DK90Bq0Atvy/?img_index=1"
+    event: "Seminar at Department of Information Engineering"
+    location: "Padua, Italy"
+    host: "University of Padova"
+    language: "English"
+
+  - year: 2025
+    title: "Column generation applied to the estimation of non-parametric discrete-choice models"
+    url: "https://www.dep.ufscar.br/munari/wiaor/"
+    event: "Workshop on Innovative Applications of Operations Research at UFSCar"
+    location: "São Carlos, Brazil"
+    host: "Federal University of São Carlos (UFSCar)"
+    language: "English"
+
+  - year: 2024
+    title: "Enhanced column generation algorithm for estimating non-parametric discrete-choice models"
+    url: "https://www.cirrelt.ca/cirrelt/images/file/2024/Webinaire_Luciano_Costa_10_dec_2024.pdf"
+    event: "Webinaire conjoint CIRRELT, MobilOpt et La chaire de recherche du Canada en logistique intégrée"
+    location: "Québec, Canada (online)"
+    language: "English"
+
+  - year: 2024
+    title: "Introdução aos Algoritmos de Geração de Colunas para resolução de Problemas de Roteamento de Veículos"
+    url: "https://www.facom.ufms.br/introducao-aos-algoritmos-de-geracao-de-colunas-para-resolucao-de-problemas-de-roteamento-de-veiculos/"
+    event: "Seminários do PPGCC da Facom/UFMS"
+    location: "Campo Grande, Brazil (online)"
+    language: "Portuguese"
+
+  - year: 2022
+    title: "Vehicle routing problems: main variants and solution methods"
+    url: "https://comunicaciones.utp.edu.co/50592/noticias/seminario-virtual-ruteo-inteligente-elemento-en-la-logistica-de-distribucion-retos-tendencias-y-desafios-gratis-y-certificado/"
+    event: "Ruteo inteligente, elemento clave en la logística de distribución, retos, tendencia y desafíos"
+    location: "Universidad Tecnológica de Pereira, Colombia (online)"
+    language: "Spanish"
+
+  - year: 2022
+    title: "Introdução aos Algoritmos de Geração de Colunas para resolução de Problemas de Roteamento de Veículos"
+    url: "https://youtu.be/9f3xttvKQ6g"
+    event: "Ciclo de Palestras do Grupo de Pesquisa Operacional em Produção e Logística da Universidade Federal do Ceará"
+    location: "Fortaleza, Brazil (online)"
+    language: "Portuguese"
+
+  - year: 2021
+    title: "Introdução à Modelagem de Sistemas utilizando o Flexsim"
+    url: "https://files.cercomp.ufg.br/weby/up/766/o/Anais2021.pdf"
+    event: "IV Encontro Goiano de Estudos em Engenharia de Produção"
+    location: "Goiânia, Brazil (online)"
+    language: "Portuguese"
+
+  - year: 2020
+    title: "Otimização na Gestão de Atividades Acadêmicas: Aplicações na UFPB"
+    url: "https://www.cdsa.ufcg.edu.br/cdsa/imagens/5-colacao-de-grau-2016-1/detail/134-colacao-de-grau-2016-1.html?tmpl=component"
+    event: "Semana da Otimização do Centro de Desenvolvimento do Semiárido"
+    location: "Universidade Federal de Campina Grande (UFCG), Brazil (online)"
+    language: "Portuguese"
+
+  - year: 2018
+    title: "TikZ introductory tutorial"
+    event: "GERAD, Montreal Workshop"
+    location: "Montréal, Canada"
+    language: "French"
+    note: "Joint with Karine Hébert and Frederic Quesnel"
+
+  - year: 2017
+    title: "TikZ introductory tutorial"
+    event: "GERAD, Montreal Workshop"
+    location: "Montréal, Canada"
+    language: "French"
+    note: "Joint with Lucie Desfontaines and Frederic Quesnel"
+
+  - year: 2016
+    title: "A Two-Phase Pareto Local Search heuristic for the bi-Objective Pollution-Routing Problem"
+    url: "https://www.cirrelt.ca/?Page=ACTIVITES_SCIENTIFIQUES"
+    event: "Séminaire du CIRRELT"
+    location: "Université Laval, Canada"
+    language: "French"
+
+  - year: 2013
+    title: "UFFLP: Combinando Planilhas com Solvers de Otimização"
+    event: "IV Seminário de Engenharia de Produção do Departamento de Engenharia de Produção da UFPB"
+    location: "UFPB, Brazil"
+    language: "Portuguese"

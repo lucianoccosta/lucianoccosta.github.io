@@ -1,0 +1,94 @@
+# Conteúdo da aba "Teaching".
+# Para adicionar um item, copie uma linha/bloco parecido e edite.
+# A ordem na página é a mesma ordem deste arquivo.
+
+undergraduate:
+  - { years: "2025–",      course: "Operations Research I (Introduction to Linear Programming)" }
+  - { years: "2023–",      course: "Simulation" }
+  - { years: "2022",       course: "Production Management" }
+  - { years: "2021–2025",  course: "Layout Planning" }
+  - { years: "2022",       course: "Quality Management" }
+  - { years: "2022",       course: "Management Information Systems (SQL)" }
+  - { years: "2022",       course: "Logistics Planning" }
+  - { years: "2021–2022",  course: "Regression Analysis" }
+  - { years: "2021",       course: "Project Management" }
+  - { years: "2021–2022",  course: "Combinatorial Optimization" }
+
+graduate:
+  - { years: "2023–",      course: "Introduction to Statistical Learning" }
+  - { years: "2022–2025",  course: "Research Seminars" }
+  - { years: "2021–",      course: "Integer Programming" }
+  - { years: "2021–",      course: "Metaheuristics" }
+  - { years: "2022",       course: "Project Management" }
+
+# Orientações de mestrado. "role" é Advisor ou Co-advisor.
+# Se ainda não houver título, apague a linha "title".
+masters_supervision:
+  - years: "2025–"
+    student: "Paloma dos Santos Alves Nunes"
+    program: "M.Sc. in Production Engineering at UFPB"
+    role: "Advisor"
+
+  - years: "2025–"
+    student: "Matheus de Oliveira Silva"
+    program: "M.Sc. in Production Engineering at UFPB"
+    role: "Advisor"
+
+  - years: "2025–"
+    student: "Rodrigo Eduardo de Oliveira Bauher Chichorro"
+    program: "M.Sc. in Informatics at UFPB"
+    role: "Co-advisor"
+
+  - years: "2024–2026"
+    student: "Marcus Vinícius Mesquita Beltrão Filho"
+    program: "M.Sc. in Production Engineering at UFPB"
+    role: "Co-advisor"
+
+  - years: "2023–2025"
+    student: "Ricardo Lukas de Medeiros França"
+    title: "Heurísticas de Programação Matemática para o Problema de Dimensionamento de Lotes de Múltiplos Itens com Restrições de Capacidade e Máquinas Paralelas Distintas"
+    program: "M.Sc. in Production Engineering at UFPB"
+    role: "Co-advisor"
+
+  - years: "2023–2025"
+    student: "Valdir Soares da Silva Neto"
+    title: "Heurísticas de programação matemática para o problema de dimensionamento de lotes com preservação de preparação"
+    program: "M.Sc. in Production Engineering at UFPB"
+    role: "Co-advisor"
+
+  - years: "2023–2025"
+    student: "Josenildo Ferreira da Silva Júnior"
+    title: "Problema de Dimensionamento e Sequenciamento de Lotes com Fontes Alternativas de Energia"
+    program: "M.Sc. in Production Engineering at UFPE"
+    role: "Co-advisor"
+
+  - years: "2022–2025"
+    student: "Alex Paranahyba de Abreu"
+    title: "The robust pickup and delivery problem with time windows"
+    program: "M.Sc. in Production Engineering at UFSCar"
+    role: "Co-advisor"
+    note: "Best Master's Dissertation Award at SBPO 2026"
+
+  - years: "2022–2024"
+    student: "Ricardo Cavalcanti de Albuquerque Júnior"
+    title: "Problema de gestão da produção com dimensionamento de lotes, setup dependente da ordem de produção e considerações ambientais"
+    program: "M.Sc. in Production Engineering at UFPE"
+    role: "Advisor"
+
+  - years: "2021–2023"
+    student: "Eduardo Fernando da Silva Souza"
+    title: "Um modelo de programação inteira mista para o escalonamento de plantões de farmácia em um hospital no interior de Pernambuco"
+    program: "M.Sc. in Production Engineering at UFPE"
+    role: "Co-advisor"
+
+  - years: "2021–2023"
+    student: "Leonardo José Cavalcante Vasconcelos"
+    title: "Uma heurística baseada em Pareto Local Search para um problema de sequenciamento de tarefas em ambiente flow shop com considerações ambientais"
+    program: "M.Sc. in Production Engineering at UFPE"
+    role: "Advisor"
+
+  - years: "2021–2022"
+    student: "Cristiane Perla Castro e Sant'Anna"
+    title: "Um modelo de programação linear inteira para o problema de programação de manutenções em linhas de transmissão"
+    program: "M.Sc. in Production Engineering at UFPE"
+    role: "Co-advisor"

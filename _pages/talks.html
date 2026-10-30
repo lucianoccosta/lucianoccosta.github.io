@@ -1,16 +1,26 @@
 ---
 layout: archive
-title: "Talks and presentations"
+title: "Invited Talks"
 permalink: /talks/
 author_profile: true
 ---
 
-{% if site.talkmap_link == true %}
+{% comment %} O conteúdo desta página vem de _data/talks.yml {% endcomment %}
 
-<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
-
-{% endif %}
-
-{% for post in site.talks reversed %}
-  {% include archive-single-talk.html %}
+{% assign current_year = "" %}
+{% for talk in site.data.talks.invited %}
+  {% assign y = talk.year | append: "" %}
+  {% if y != current_year %}
+    {% unless forloop.first %}</ul>{% endunless %}
+    <h2>{{ talk.year }}</h2>
+    <ul>
+    {% assign current_year = y %}
+  {% endif %}
+  <li style="margin-bottom: 0.8em;">
+    <strong>{% if talk.url %}<a href="{{ talk.url }}">{{ talk.title }}</a>{% else %}{{ talk.title }}{% endif %}</strong><br>
+    {{ talk.event }}{% if talk.host %} &mdash; {{ talk.host }}{% endif %}{% if talk.location %}, {{ talk.location }}{% endif %}.
+    {% if talk.language %}<em>(In {{ talk.language }})</em>{% endif %}
+    {% if talk.note %}<br><small>{{ talk.note }}</small>{% endif %}
+  </li>
+  {% if forloop.last %}</ul>{% endif %}
 {% endfor %}

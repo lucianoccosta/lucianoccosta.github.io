@@ -5,8 +5,30 @@ permalink: /teaching/
 author_profile: true
 ---
 
-{% include base_path %}
+{% comment %} O conteúdo desta página vem de _data/teaching.yml {% endcomment %}
+{% assign t = site.data.teaching %}
 
-{% for post in site.teaching reversed %}
-  {% include archive-single.html %}
+<h2>Undergraduate courses</h2>
+<ul>
+{% for c in t.undergraduate %}
+  <li><strong>{{ c.years }}</strong> &mdash; {{ c.course }}</li>
 {% endfor %}
+</ul>
+
+<h2>Graduate courses</h2>
+<ul>
+{% for c in t.graduate %}
+  <li><strong>{{ c.years }}</strong> &mdash; {{ c.course }}</li>
+{% endfor %}
+</ul>
+
+<h2>Master's thesis supervision</h2>
+<ul>
+{% for s in t.masters_supervision %}
+  <li style="margin-bottom: 0.8em;">
+    <strong>{{ s.student }}</strong> ({{ s.years }}) &mdash; {{ s.role }}<br>
+    {% if s.title %}<em>{{ s.title }}</em><br>{% endif %}
+    <small>{{ s.program }}{% if s.note %} &middot; {{ s.note }}{% endif %}</small>
+  </li>
+{% endfor %}
+</ul>

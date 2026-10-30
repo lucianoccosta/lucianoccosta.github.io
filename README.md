@@ -2,7 +2,7 @@
 
 Site publicado em **https://lucianoccosta.github.io** (GitHub Pages + Jekyll, tema Academic Pages).
 
-Passo a passo completo: [GUIA_DO_SITE.md](GUIA_DO_SITE.md).
+Passo a passo completo: arquivo GUIA_DO_SITE.md (fica só no computador local, fora do GitHub).
 
 Toda vez que você envia (push) uma alteração para o GitHub, o site é reconstruído sozinho
 em 1–2 minutos. Você pode acompanhar na aba **Actions** do repositório.
